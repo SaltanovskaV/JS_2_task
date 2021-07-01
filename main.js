@@ -61,12 +61,12 @@ console.log(weekFn(10));
 /*6*/
 function ageClassification(n) {
     return n < 0 ? str = null:
-    n < 24 ? str = 'детский возраст' :
-    n < 44 ? str = 'молодой возраст' :
-    n < 65 ? str = 'средний возраст' :
-    n < 75 ? str = 'пожилой возраст' :
-    n < 90 ? str ='старческий возраст' :
-    n < 122 ? str ='долгожители' :
+    n <= 24 ? str = 'детский возраст' :
+    n <= 44 ? str = 'молодой возраст' :
+    n <= 65 ? str = 'средний возраст' :
+    n <= 75 ? str = 'пожилой возраст' :
+    n <= 90 ? str ='старческий возраст' :
+    n <= 122 ? str ='долгожители' :
      str = null;
   } 
   console.log(ageClassification(-5));
@@ -110,6 +110,10 @@ function cbAdd(a, b) {
 return a + b;
 } 
 console.log(mainFunc(2,5,cbAdd));
+
+
+     
+
 
 
 
